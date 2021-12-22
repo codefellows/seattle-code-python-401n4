@@ -2,6 +2,7 @@
 
 # Import the library random.
 import random
+# from random import choice
 
 # Create a list to get a random number from
 number_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15]
