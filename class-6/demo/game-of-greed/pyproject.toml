@@ -6,6 +6,7 @@ authors = ["Roger Huba <rogerhuba@gmail.com>"]
 
 [tool.poetry.dependencies]
 python = "^3.9"
+pytest-cov = "^3.0.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^5.2"

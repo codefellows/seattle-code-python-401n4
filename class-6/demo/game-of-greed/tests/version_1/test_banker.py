@@ -1,7 +1,7 @@
 import pytest
 from game_of_greed.banker import Banker
 
-pytestmark = [pytest.mark.version_1, pytest.mark.version_2]
+# pytestmark = [pytest.mark.version_1, pytest.mark.version_2]
 
 @pytest.mark.skip('Pending')
 def test_new_banker():
