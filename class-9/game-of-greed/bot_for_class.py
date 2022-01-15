@@ -160,15 +160,88 @@ class Roger(BaseBot):
 
         return "r"
 
-class YourBot(BaseBot):
+class ed_alex(BaseBot):
     def _roll_bank_or_quit(self):
-        """your logic here"""
-        return "b"
+        if self.unbanked_points >= 1000 or self.dice_remaining < 3:
+            return "b"
+        return "r"
+
+class BnJosh(BaseBot):
+    def _roll_bank_or_quit(self):
+            # if self.unbanked_points <= 400:
+            #     return "r"
+
+        if self.dice_remaining < 3 or self.unbanked_points > 550:
+            return "b"
+
+            # if self.dice_remaining <= 3:
+            #     return "r"
+
+        if  self.dice_remaining < 3 or self.unbanked_points >= 750:
+            return "b"
+
+        if self.unbanked_points <= 400:
+            return "r"
+
+class Chris(BaseBot):
+    def _roll_bank_or_quit(self):
+        if self.dice_remaining == 5 and self.unbanked_points >= 1800:
+            return "b"
+        if self.dice_remaining == 4 and self.unbanked_points >= 900:
+            return "b"
+        if self.dice_remaining == 3 and self.unbanked_points >= 400:
+            return "b"
+        if self.dice_remaining == 2 and self.unbanked_points >= 300:
+            return "b"
+        if self.dice_remaining == 1 and self.unbanked_points >= 200:
+            return "b"
+        return "r"
+
+class conner_victor(BaseBot):
+    def _roll_bank_or_quit(self):
+        if self.unbanked_points >= 680:
+            return "b"
+        return "r"
+
+class Hal9000(BaseBot):
+    def _roll_bank_or_quit(self):
+        if self.dice_remaining == 0:
+            return "r"
+        elif self.dice_remaining == 1:
+            if self.unbanked_points < 50:
+                return "r"
+            else:
+                return "b"
+        elif self.dice_remaining == 2:
+            if self.unbanked_points < 100:
+                return "r"
+            else:
+                return "b"
+        elif self.unbanked_points >= 600:
+            return "b"
+        else:
+            return "r"
+
+class Jordans_and_Taylor(BaseBot):
+    def _roll_bank_or_quit(self):
+        if self.unbanked_points >= 550 and self.dice_remaining >= 3:
+            return "b"
+        elif self.unbanked_points >= 300 and self.dice_remaining >= 2:
+            return "b"
+        elif self.unbanked_points >= 150 and self.dice_remaining == 1:
+            return "b"
+        return "r"
 
 if __name__ == "__main__":
-    num_games = 1000
+    num_games = 10000
     # NervousNellie.play(num_games)
     # MiddlingMargaret.play(num_games)
-    Roger.play(num_games)
-    DaringDarla.play(num_games)
+    # Roger.play(num_games)
+    # DaringDarla.play(num_games)
     # YourBot.play(num_games)
+    # ed_alex.play(num_games)
+    # BnJosh.play(num_games)
+    Chris.play(num_games)
+    # conner_victor.play(num_games)
+    Hal9000.play(num_games)
+    Jordans_and_Taylor.play(num_games)
