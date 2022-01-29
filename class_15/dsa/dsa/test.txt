@@ -1,0 +1,24 @@
+bt.root = A
+values = ['A', 'B', 'D', 'E', 'C', 'F']
+
+bt.preorder()
+
+walk('A')
+    append 'A'
+walk('B')
+    append 'B'
+    walk(D)
+        append 'D' # root
+        walk(None) # left
+        walk(None) # right
+    walk('E')
+        append 'E' # root
+        walk(None) # left 
+        walk(None) # right
+walk('C')
+    append 'C' # root
+    walk(F) # left
+        append 'F' # root
+        walk(None) # left
+        walk(None) # right
+    walkd(None) #Right
