@@ -1,0 +1,30 @@
+[
+    {
+    "word": "python",
+    "phonetic": "ˈpʌɪθ(ə)n",
+    "phonetics": [
+    {
+    "text": "ˈpʌɪθ(ə)n",
+    "audio": "//ssl.gstatic.com/dictionary/static/sounds/20200429/python--_gb_1.mp3"
+    }
+    ],
+    "origin": "late 16th century (in the Greek sense): via Latin from Greek Puthōn, the name of a huge serpent killed by Apollo. The main current sense dates from the mid 19th century.",
+    "meanings": [
+    {
+    "partOfSpeech": "noun",
+    "definitions": [
+    {
+    "definition": "a large heavy-bodied non-venomous snake occurring throughout the Old World tropics, killing prey by constriction and asphyxiation.",
+    "synonyms": [],
+    "antonyms": []
+    },
+    {
+    "definition": "a high-level general-purpose programming language.",
+    "synonyms": [],
+    "antonyms": []
+    }
+    ]
+    }
+    ]
+    }
+    ]
