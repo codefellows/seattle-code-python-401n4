@@ -7,5 +7,6 @@ class Movie(models.Model):
     reviewer = models.ForeignKey(get_user_model(), on_delete=models.CASCADE)
 
     def __str__(self):
-        return self.name
-        # return self.name, self.rating, self.reviewer
+        # return self.name
+        return_string = f'{self.name} {self.rating}{self.reviewer}'
+        return return_string
