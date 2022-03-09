@@ -24,4 +24,4 @@ class MovieUpdateView(UpdateView):
 class MovieDeleteView(DeleteView):
     template_name = 'movie-delete.html'
     model = Movie
-    success_url = reverse_lazy('list_view')
+    success_url = reverse_lazy('movie_list')
