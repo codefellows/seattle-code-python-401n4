@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "things"
+version = "0.1.0"
+description = ""
+authors = ["Roger Huba <rogerhuba@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+Django = "^4.0.3"
+django-allauth = "^0.49.0"
+django-crispy-forms = "^1.14.0"
+django-debug-toolbar = "^3.2.4"
+whitenoise = "^6.0.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
