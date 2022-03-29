@@ -1,13 +1,14 @@
 class Graph:
 
     def __init__(self):
-        pass
+        self.adjacency_list = {}
+        # key will be the node, value adj node with a value of the edge
 
-    def add_node(self):
-        pass
+    def add_node(self, value):
+        v = Vertex(value)
             # Arguments: value
             # Returns: The added node
-            # Add a node to the graph
+            # Add a node to the graph or add to adj list
 
     def add_edge(self):
         pass
@@ -35,9 +36,10 @@ class Graph:
 
 
 class Vertex:
-    def __init__(self):
-        pass
+    def __init__(self, value):
+        self.value = value
 
 class Edge:
-    def __init__(self):
-        pass
+    def __init__(self, vertex,weight=1):
+        self.vertex = vertex
+        self.weight = weight
