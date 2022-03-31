@@ -1,17 +1,27 @@
 class Graph:
 
     def __init__(self):
-        self.adjacency_list = {}
-        # key will be the node, value adj node with a value of the edge
+        self.adjacency_list={}
+        # 'seattle' ->(200) 'Los Angels'
+        # 'seattle' ->(220) 'Denver'
+        # 'seattle' ->(100) 'Spokane'
+        # self.adjacency_list['seattle'] -> [('Los Angeles',200), ('Denver', 220), ('Spokane', 100)]
 
-    def add_node(self, value):
-        v = Vertex(value)
+
+
+    def add_node(self):
+        pass
             # Arguments: value
             # Returns: The added node
-            # Add a node to the graph or add to adj list
+            # Add a node to the graph
 
-    def add_edge(self):
+    def add_edge(self, start_node, end_node, weight=0):
         pass
+            # Check if the start and end nodes are in the adjancency list.
+                # if no, raise an exception.
+                # if yes
+                    # instanciate an edge (end_node, weight)
+                # self.adjacency_list[start_node].append(edge)
             # Arguments: 2 nodes to be connected by the edge, weight (optional)
             # Returns: nothing
             # Adds a new edge between two nodes in the graph
@@ -33,6 +43,8 @@ class Graph:
         pass
             # Arguments: none
             # Returns the total number of nodes in the graph
+            # len(self.adjacency_list)-
+
 
 
 class Vertex:
