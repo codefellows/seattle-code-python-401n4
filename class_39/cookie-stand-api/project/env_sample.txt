@@ -1,0 +1,14 @@
+SECRET_KEY=23halsnf0982j3ounrpo8jpi2ou3nr
+DEBUG=True
+
+ALLOWED_HOSTS=localhost,127.0.0.1,0.0.0.0
+ALLOW_ALL_ORIGINS=True
+DATABASE_NAME=mfidfcjm
+DATABASE_USER=mfidfcjm
+DATABASE_PASSWORD=qoZghglU0IVkBim0HmkbRrLeIiOkQkqh
+DATABASE_HOST=heffalump.db.elephantsql.com
+DATABASE_PORT=5432
+
+# User: pat
+# Email: pat@pat.com
+# pw: abcd1234!

@@ -1,6 +1,5 @@
 import type { NextPage } from 'next'
-import Head from 'next/head'
-import Image from 'next/image'
+import Heads from 'next/head'
 import Link from 'next/Link'
 import { replies } from '../data'
 import { useState } from 'react'
@@ -36,15 +35,7 @@ const Home: NextPage = () => {
 
   return (
     <div className="">
-      <Head>
-        <title>Eight Ball</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-        {/* <header className="flex items-center justify-between p-4 bg-gray-500 text-gray-50">
-            <h1 className="text-4xl">Eight Ball</h1>
-            <p>{ answeredQuestions.length } Answered Question</p>
-        </header> */}
-
+      <Heads />
       <Header count={answeredQuestions.length}/>
 
       <main className="">
